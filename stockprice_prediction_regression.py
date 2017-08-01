@@ -1,15 +1,17 @@
-import quandl, math
+import quandl, math, datetime, config, time, pickle, os
 import numpy as np
 import pandas as pd
 from sklearn import preprocessing, cross_validation, svm
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
 from matplotlib import style
-import datetime
-import config
-import time
-import pickle
-import os
+
+
+'''
+Predicts the adjusted close value of Google stock 33 days in the future using
+LinearRegression (or commented SVM) & quandl data to train/test. This feature
+set is not a good indicator/predictor but does successfully exercise the alg.
+'''
 
 style.use('ggplot')
 
