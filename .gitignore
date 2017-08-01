@@ -104,4 +104,4 @@ config.py
 readme.txt
 *.pcap
 *.csv
-
+*.pickle
